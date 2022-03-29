@@ -2,7 +2,7 @@
   "name": "homework_mogo",
   "version": "1.0.0",
   "description": "Homework_mogo",
-  "source": "index.html",
+  "source": "source/index.html",
   "scripts": {
     "test": "test",
     "start": "parcel",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Garafut17/Homework_Mogo#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.0",
     "parcel": "^2.4.0",
     "sass": "^1.49.9"
   }
