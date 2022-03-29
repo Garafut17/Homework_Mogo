@@ -1,0 +1,28 @@
+{
+  "name": "homework_mogo",
+  "version": "1.0.0",
+  "description": "Homework_mogo",
+  "source": "index.html",
+  "scripts": {
+    "test": "test",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Garafut17/Homework_Mogo.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Gena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Garafut17/Homework_Mogo/issues"
+  },
+  "homepage": "https://github.com/Garafut17/Homework_Mogo#readme",
+  "devDependencies": {
+    "parcel": "^2.4.0",
+    "sass": "^1.49.9"
+  }
+}
