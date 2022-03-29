@@ -2,7 +2,7 @@
   "name": "homework_mogo",
   "version": "1.0.0",
   "description": "Homework_mogo",
-  "source": "source/index.html",
+  "source": "src/index.html",
   "scripts": {
     "test": "test",
     "start": "parcel",
