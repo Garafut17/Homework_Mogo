@@ -1,0 +1,76 @@
+// Основные цвета, используемые в документе
+$primary-color: rgb(255, 255, 255);
+$orange-color: #f38281;
+$green-color: #95e1d3;
+$grey-color: #a9afb1;
+$black-color: #2d3033;
+
+
+
+$gradient: linear-gradient(
+  rgba(233, 130, 131, 0.8) 0%,
+  rgba(237, 215, 137, 0.8) 100%
+);
+$white-overlay: linear-gradient(
+  rgba(250, 250, 250, 0.8) 0%,
+  rgba(255, 255, 255, 0.8) 100%
+);
+
+//Этот миксин задает тип, вес, размер, цвет шрифта
+@mixin font($f, $w, $s, $c) {
+  font-family: $f;
+  font-weight: $w;
+  font-size: $s;
+  color: $c;
+}
+@mixin font($f, $w, $s, $c) {
+  font-family: $f;
+  font-weight: $w;
+  font-size: $s;
+  color: $c;
+}
+
+//Это шаблон подчеркивания в title
+%title__line {
+  width: 170px;
+  height: 1px;
+  border-bottom: 4px solid $orange-color;
+}
+//Это шаблон подчеркивания в именах
+%names__underline {
+  width: 70px;
+  height: 1px;
+  border-bottom: 4px solid $orange-color;
+}
+//Это шаблон title
+%title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1170px;
+  padding-top: 40px;
+  .title__description {
+    @include font("Kaushan Script", 400, 30px, $black-color);
+    padding: 24px 0;
+  }
+  .title__name {
+    @include font("Raleway", 900, 36px, $black-color);
+    padding: 24px 0;
+    text-transform: uppercase;
+  }
+  .title__line {
+    @extend %title__line;
+    padding-top: 24px;
+  }
+  .title__paragraph {
+    @include font("Raleway", 400, 18px, $black-color);
+    text-align: center;
+    padding: 40px 0;
+  }
+}
+
+%section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
