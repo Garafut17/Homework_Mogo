@@ -1160,7 +1160,26 @@ $white-overlay: linear-gradient(
   @extend %section__container;
   .title__container {
     @extend %title__container;
-    margin-top: 40px;
+    @media screen and (max-width: $tablet){
+      padding-top: 32px;
+      max-width: 992px;
+      .title__description {
+        font-size: 24px;
+        padding: 16px 0;
+      }
+      .title__name {
+        font-size: 24px;
+        padding: 16px 0;
+      }
+      .title__line {
+        width: 148px;
+        padding-top: 20px;
+      }
+      .title__paragraph {
+        font-size: 14px;
+        padding: 32px 0;
+      }
+    }
   }
   .stories-cards__container{
     width:1170px;
