@@ -84,12 +84,12 @@ $white-overlay: linear-gradient(
 //Это шаблон заголовка подписи
 %title {
   @include font("Raleway", 700, 24px, $black-color);
-          text-transform: uppercase;
+  text-transform: uppercase;
 }
 //Это шаблон подзаголовка подписи
 %subtitle {
   @include font("Raleway", 400, 18px, $black-color);
-          text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .banner {
@@ -102,14 +102,14 @@ $white-overlay: linear-gradient(
     display: flex;
     justify-content: space-between;
     width: 1170px;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       max-width: 992px;
       padding: 40px 16px;
     }
     .navigation__logo {
       @include font("Raleway", bold, 36px, $primary-color);
-      @media screen and (max-width: $tablet){
-        font-size: 24px
+      @media screen and (max-width: $tablet) {
+        font-size: 24px;
       }
     }
     .navigation__menu {
@@ -151,7 +151,7 @@ $white-overlay: linear-gradient(
     .header__subtitle {
       @include font("Kaushan Script", 400, 64px, $primary-color);
       line-height: 93px;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         font-size: 48px;
       }
     }
@@ -159,7 +159,7 @@ $white-overlay: linear-gradient(
       @include font("Montserrat", 700, 144px, $primary-color);
       text-transform: uppercase;
       line-height: 176px;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         font-size: 96px;
         line-height: 117px;
       }
@@ -170,7 +170,7 @@ $white-overlay: linear-gradient(
       border-top: 4px solid $primary-color;
       margin-top: 40px;
       margin-bottom: 72px;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         width: 120px;
       }
     }
@@ -181,20 +181,19 @@ $white-overlay: linear-gradient(
       border: 4px solid $primary-color;
       @include font("Raleway", 700, 24px, $primary-color);
       text-transform: uppercase;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         width: 320px;
         height: 56px;
         font-size: 18px;
       }
-      
     }
   }
   .slider__container {
     width: 1170px;
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: $tablet){
-      max-width: 992px
+    @media screen and (max-width: $tablet) {
+      max-width: 992px;
     }
     .header-slider {
       width: 270px;
@@ -202,15 +201,15 @@ $white-overlay: linear-gradient(
       border-top: 4px solid #f9efcf;
       display: flex;
       align-items: center;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         width: 232px;
       }
       p {
         @include font("Raleway", 600, 36px, #f9efcf);
         line-height: 36px;
-        @media screen and (max-width: $tablet){
+        @media screen and (max-width: $tablet) {
           font-size: 24px;
-        }    
+        }
       }
       span {
         @include font("Raleway", 400, 14px, #f9efcf);
@@ -238,7 +237,7 @@ $white-overlay: linear-gradient(
   @extend %section__container;
   .title__container {
     @extend %title__container;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       padding-top: 32px;
       max-width: 992px;
       .title__description {
@@ -264,7 +263,7 @@ $white-overlay: linear-gradient(
     display: grid;
     grid-template-columns: 370px 370px 370px;
     grid-column-gap: 30px;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       grid-template-columns: 320px 320px 320px;
       grid-column-gap: 16px;
     }
@@ -273,7 +272,7 @@ $white-overlay: linear-gradient(
       height: 338px;
       background-color: $green-color;
       position: relative;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         width: 320px;
         height: 282px;
       }
@@ -285,28 +284,28 @@ $white-overlay: linear-gradient(
       position: absolute;
       right: 16px;
       bottom: 16px;
-      display:flex;
+      display: flex;
       flex-direction: column;
-      justify-content:center;
+      justify-content: center;
       align-items: center;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         width: 320px;
         height: 282px;
       }
-      .card_positioned__icon{
-        padding-top:32px;
+      .card_positioned__icon {
+        padding-top: 32px;
       }
-      .card_positioned__title{
-          padding-top:32px;
-          @include font("Raleway", 400, 24px, $primary-color);
-          text-transform: uppercase;
-          @media screen and (max-width: $tablet){
-            font-size: 18px;
-          }
+      .card_positioned__title {
+        padding-top: 32px;
+        @include font("Raleway", 400, 24px, $primary-color);
+        text-transform: uppercase;
+        @media screen and (max-width: $tablet) {
+          font-size: 18px;
         }
+      }
     }
-    .card{
-      @media screen and (max-width: $tablet){
+    .card {
+      @media screen and (max-width: $tablet) {
         width: 320px;
         height: 282px;
       }
@@ -318,14 +317,14 @@ $white-overlay: linear-gradient(
     width: 100%;
     display: flex;
     justify-content: center;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       margin-top: 50px;
     }
     .about-futures__container {
       display: grid;
       grid-template-columns: 234px 234px 234px 234px 234px;
       grid-template-rows: 250px;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         grid-template-columns: 200px 200px 200px 200px 200px;
         grid-template-rows: 168px;
       }
@@ -338,14 +337,14 @@ $white-overlay: linear-gradient(
         .about-futures__title {
           padding-bottom: 24px;
           @include font("Raleway", 700, 64px, $primary-color);
-          @media screen and (max-width: $tablet){
+          @media screen and (max-width: $tablet) {
             padding-bottom: 16px;
             font-size: 48px;
           }
         }
         .about-futures__subtitle {
           @include font("Raleway", 400, 18px, $primary-color);
-          @media screen and (max-width: $tablet){
+          @media screen and (max-width: $tablet) {
             padding-bottom: 16px;
             font-size: 16px;
           }
@@ -358,7 +357,7 @@ $white-overlay: linear-gradient(
   @extend %section__container;
   .title__container {
     @extend %title__container;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       padding-top: 32px;
       max-width: 992px;
       .title__description {
@@ -387,7 +386,7 @@ $white-overlay: linear-gradient(
     grid-template-rows: 140px 140px;
     grid-column-gap: 30px;
     row-gap: 140px;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       grid-template-columns: 312px 312px 312px;
       grid-template-rows: 120px 120px;
       padding-bottom: 56px;
@@ -396,7 +395,7 @@ $white-overlay: linear-gradient(
       display: flex;
       .service-card__icon {
         width: 70px;
-        @media screen and (max-width: $tablet){
+        @media screen and (max-width: $tablet) {
           width: 60px;
         }
       }
@@ -405,7 +404,7 @@ $white-overlay: linear-gradient(
         padding-left: 32px;
         display: flex;
         flex-direction: column;
-        @media screen and (max-width: $tablet){
+        @media screen and (max-width: $tablet) {
           padding-top: 40px;
           padding-left: 24px;
         }
@@ -416,7 +415,7 @@ $white-overlay: linear-gradient(
           @extend %subtitle;
           padding-top: 24px;
           text-transform: lowercase;
-          @media screen and (max-width: $tablet){
+          @media screen and (max-width: $tablet) {
             padding-top: 16px;
           }
         }
@@ -431,7 +430,7 @@ $white-overlay: linear-gradient(
   background-repeat: no-repeat;
   .title__container {
     @extend %title__container;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       padding-top: 32px;
       max-width: 992px;
       .title__description {
@@ -460,7 +459,7 @@ $white-overlay: linear-gradient(
     background-repeat: no-repeat;
     position: relative;
     margin-bottom: 56px;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       width: 792px;
       height: 356px;
       margin-bottom: 40px;
@@ -478,7 +477,7 @@ $white-overlay: linear-gradient(
   @extend %section__container;
   .title__container {
     @extend %title__container;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       padding-top: 32px;
       max-width: 992px;
       .title__description {
@@ -503,21 +502,21 @@ $white-overlay: linear-gradient(
     width: 1170px;
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: $tablet){
-      width:992px;
+    @media screen and (max-width: $tablet) {
+      width: 992px;
     }
 
-    .service-card__image{
-      @media screen and (max-width: $tablet){
+    .service-card__image {
+      @media screen and (max-width: $tablet) {
         width: 486px;
       }
-    } 
+    }
     .do-slider {
       height: 483px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         height: 409px;
       }
       .do-slider__open-item {
@@ -528,8 +527,8 @@ $white-overlay: linear-gradient(
           justify-content: space-between;
           padding: 24px 16px;
           border: 1px solid #c6cbcd;
-          .do-slider__icon{
-            @media screen and (max-width: $tablet){
+          .do-slider__icon {
+            @media screen and (max-width: $tablet) {
               width: 36px;
             }
           }
@@ -537,18 +536,18 @@ $white-overlay: linear-gradient(
             width: 370px;
             @include font("Raleway", 700, 24px, $black-color);
             text-transform: uppercase;
-            @media screen and (max-width: $tablet){
-            padding: 16px 16px;
-            width: 316px;
-            font-size: 18px;;
+            @media screen and (max-width: $tablet) {
+              padding: 16px 16px;
+              width: 316px;
+              font-size: 18px;
             }
-                    .do-slider__icon{
-          @media screen and (max-width: $tablet){
-            width: 36px;
+            .do-slider__icon {
+              @media screen and (max-width: $tablet) {
+                width: 36px;
+              }
+            }
           }
-        }
-          }
-          @media screen and (max-width: $tablet){
+          @media screen and (max-width: $tablet) {
             padding: 16px 16px;
             width: 454px;
           }
@@ -558,7 +557,7 @@ $white-overlay: linear-gradient(
           padding: 24px 16px;
           border: 1px solid #c6cbcd;
           border-top: none;
-          @media screen and (max-width: $tablet){
+          @media screen and (max-width: $tablet) {
             padding: 16px 16px;
             width: 454px;
           }
@@ -568,7 +567,7 @@ $white-overlay: linear-gradient(
             overflow-y: scroll;
             @include font("Raleway", 400, 18px, $black-color);
             line-height: 21px;
-            @media screen and (max-width: $tablet){
+            @media screen and (max-width: $tablet) {
               font-size: 14px;
               height: 102px;
             }
@@ -588,9 +587,9 @@ $white-overlay: linear-gradient(
           border: none;
           background: none;
           padding: 0;
-          .do-slider__button-arrow{
-            @media screen and (max-width: $tablet){
-              width:24px;
+          .do-slider__button-arrow {
+            @media screen and (max-width: $tablet) {
+              width: 24px;
             }
           }
         }
@@ -602,12 +601,12 @@ $white-overlay: linear-gradient(
         justify-content: space-between;
         padding: 24px 16px;
         border: 1px solid #c6cbcd;
-        @media screen and (max-width: $tablet){
-            padding: 16px 16px;
-            width: 454px;
-          }
-        .do-slider__icon{
-          @media screen and (max-width: $tablet){
+        @media screen and (max-width: $tablet) {
+          padding: 16px 16px;
+          width: 454px;
+        }
+        .do-slider__icon {
+          @media screen and (max-width: $tablet) {
             width: 36px;
           }
         }
@@ -615,7 +614,7 @@ $white-overlay: linear-gradient(
           width: 370px;
           @include font("Raleway", 700, 24px, $black-color);
           text-transform: uppercase;
-          @media screen and (max-width: $tablet){
+          @media screen and (max-width: $tablet) {
             font-size: 18px;
             width: 316px;
           }
@@ -623,10 +622,10 @@ $white-overlay: linear-gradient(
         .do-slider__button {
           border: none;
           background: none;
-          padding:0;
-          .do-slider__button-arrow{
-            @media screen and (max-width: $tablet){
-              width:24px;
+          padding: 0;
+          .do-slider__button-arrow {
+            @media screen and (max-width: $tablet) {
+              width: 24px;
             }
           }
         }
@@ -640,7 +639,7 @@ $white-overlay: linear-gradient(
     width: 100%;
     display: flex;
     justify-content: center;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       margin-top: 88px;
     }
     .reviews-slider {
@@ -648,11 +647,11 @@ $white-overlay: linear-gradient(
       justify-content: space-between;
       align-items: center;
       width: 1170px;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         width: 992px;
       }
-      .reviews__button-image{
-        @media screen and (max-width: $tablet){
+      .reviews__button-image {
+        @media screen and (max-width: $tablet) {
           width: 32px;
         }
       }
@@ -668,7 +667,7 @@ $white-overlay: linear-gradient(
         display: flex;
         justify-content: center;
         align-items: center;
-        @media screen and (max-width: $tablet){
+        @media screen and (max-width: $tablet) {
           width: 116px;
           height: 116px;
         }
@@ -678,14 +677,14 @@ $white-overlay: linear-gradient(
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        @media screen and (max-width: $tablet){
+        @media screen and (max-width: $tablet) {
           width: 655px;
         }
         .reviews-slider__text {
           @include font("Raleway", 500, 24px, $grey-color);
           font-style: italic;
           padding-bottom: 40px;
-          @media screen and (max-width: $tablet){
+          @media screen and (max-width: $tablet) {
             padding-bottom: 32px;
             font-size: 18px;
           }
@@ -695,14 +694,14 @@ $white-overlay: linear-gradient(
           align-items: center;
           .name-underline {
             @extend %names__underline;
-            @media screen and (max-width: $tablet){
+            @media screen and (max-width: $tablet) {
               width: 48px;
             }
           }
           .reviews-slider__name {
             @include font("Kaushan Script", 400, 30px, $black-color);
             margin-left: 56px;
-            @media screen and (max-width: $tablet){
+            @media screen and (max-width: $tablet) {
               font-size: 24px;
               margin-left: 36px;
             }
@@ -713,8 +712,8 @@ $white-overlay: linear-gradient(
         border: none;
         background: none;
         transform: rotate(90deg);
-        @media screen and (max-width: $tablet){
-          width:32px;
+        @media screen and (max-width: $tablet) {
+          width: 32px;
         }
       }
     }
@@ -725,7 +724,7 @@ $white-overlay: linear-gradient(
   .title__container {
     @extend %title__container;
     margin-top: 40px;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       padding-top: 0px;
       max-width: 992px;
       .title__description {
@@ -751,7 +750,7 @@ $white-overlay: linear-gradient(
     display: grid;
     grid-template-columns: 370px 370px 370px;
     grid-column-gap: 30px;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       grid-template-columns: 318px 318px 318px;
       grid-column-gap: 20px;
     }
@@ -759,11 +758,11 @@ $white-overlay: linear-gradient(
       width: 370px;
       height: 424px;
       position: relative;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         width: 318px;
       }
-      .team-card{
-        @media screen and (max-width: $tablet){
+      .team-card {
+        @media screen and (max-width: $tablet) {
           width: 318px;
         }
       }
@@ -777,13 +776,13 @@ $white-overlay: linear-gradient(
         display: flex;
         justify-content: center;
         align-items: center;
-        @media screen and (max-width: $tablet){
+        @media screen and (max-width: $tablet) {
           width: 318px;
           height: 360px;
         }
         .title-card__icon {
           padding-top: 16px;
-          width:32px;
+          width: 32px;
         }
       }
       .team-card__text-wrapper {
@@ -801,10 +800,10 @@ $white-overlay: linear-gradient(
       }
     }
     .team-card {
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         width: 318px;
-        img{
-          @media screen and (max-width: $tablet){
+        img {
+          @media screen and (max-width: $tablet) {
             width: 318px;
             height: 360px;
           }
@@ -831,7 +830,7 @@ $white-overlay: linear-gradient(
     background-color: #f8f8f8;
     display: flex;
     justify-content: center;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       height: 144px;
       margin-top: 56px;
     }
@@ -840,13 +839,13 @@ $white-overlay: linear-gradient(
       display: flex;
       justify-content: space-between;
       align-items: center;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         max-width: 992px;
-        .partners-icon{
+        .partners-icon {
           width: 88px;
           height: 88px;
         }
-        .partners-icon_big{
+        .partners-icon_big {
           width: 48px;
           height: 48px;
         }
@@ -859,7 +858,7 @@ $white-overlay: linear-gradient(
   .title__container {
     @extend %title__container;
     margin-top: 40px;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       padding-top: 0px;
       max-width: 992px;
       .title__description {
@@ -887,7 +886,7 @@ $white-overlay: linear-gradient(
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50%;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       height: 512px;
     }
     .grid-item1 {
@@ -957,14 +956,14 @@ $white-overlay: linear-gradient(
         .grid-item__title {
           @include font("Raleway", 700, 24px, $primary-color);
           text-transform: uppercase;
-          @media screen and (max-width: $tablet){
+          @media screen and (max-width: $tablet) {
             font-size: 18px;
           }
         }
         .grid-item__subtitle {
           padding-top: 16px;
           @include font("Raleway", 400, 18px, $primary-color);
-          @media screen and (max-width: $tablet){
+          @media screen and (max-width: $tablet) {
             font-size: 16px;
           }
         }
@@ -986,7 +985,7 @@ $white-overlay: linear-gradient(
     width: 100%;
     display: flex;
     justify-content: center;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       padding: 16px 0;
       margin: 40px 0;
     }
@@ -994,11 +993,11 @@ $white-overlay: linear-gradient(
       display: flex;
       justify-content: space-between;
       width: 1170px;
-      @media screen and (max-width: $tablet){
+      @media screen and (max-width: $tablet) {
         width: 992px;
       }
-      .reviews__button{
-        @media screen and (max-width: $tablet){
+      .reviews__button {
+        @media screen and (max-width: $tablet) {
           width: 24px;
         }
       }
@@ -1014,8 +1013,8 @@ $white-overlay: linear-gradient(
         display: flex;
         justify-content: center;
         align-items: center;
-        .reviews-slider__icon{
-            @media screen and (max-width: $tablet) {
+        .reviews-slider__icon {
+          @media screen and (max-width: $tablet) {
             width: 116px;
             height: 116px;
           }
@@ -1069,7 +1068,7 @@ $white-overlay: linear-gradient(
   background-repeat: no-repeat;
   .title__container {
     @extend %title__container;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       padding-top: 32px;
       max-width: 992px;
       .title__description {
@@ -1090,21 +1089,21 @@ $white-overlay: linear-gradient(
       }
     }
   }
-  .clients__container{
-    width:1170px;
+  .clients__container {
+    width: 1170px;
     margin-top: 40px;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media screen and (max-width: $tablet){
-      width:992px;
+    @media screen and (max-width: $tablet) {
+      width: 992px;
     }
-    .client-card{
+    .client-card {
       width: 550px;
       display: flex;
       margin: 40px 0;
-      @media screen and (max-width: $tablet){
-        width:454px;
+      @media screen and (max-width: $tablet) {
+        width: 454px;
         margin: 24px 0;
       }
       .client-card__icon-wrapper {
@@ -1113,54 +1112,52 @@ $white-overlay: linear-gradient(
         border-radius: 90px;
         display: flex;
         justify-content: center;
-        align-items:flex-start;
-        .client-card__icon{
+        align-items: flex-start;
+        .client-card__icon {
           width: 88px;
           height: 88px;
-        }      
+        }
       }
-      .text-container{
+      .text-container {
         padding-left: 50px;
-        .client-card__title{
+        .client-card__title {
           @extend %title;
-          @media screen and (max-width: $tablet){
-            font-size:18px;
+          @media screen and (max-width: $tablet) {
+            font-size: 18px;
           }
         }
-        .client-card__subtitle{
+        .client-card__subtitle {
           @extend %subtitle;
           padding-top: 16px;
-          @media screen and (max-width: $tablet){
-            font-size:14px;
+          @media screen and (max-width: $tablet) {
+            font-size: 14px;
             padding-top: 8px;
           }
-
         }
-        .name-underline{
+        .name-underline {
           @extend %names__underline;
-          padding-top:32px;
-          @media screen and (max-width: $tablet){
+          padding-top: 32px;
+          @media screen and (max-width: $tablet) {
             padding-top: 24px;
           }
-          
         }
-        .client-card__text{
+        .client-card__text {
           @include font("Raleway", 400, 18px, $black-color);
-          padding-top:64px;
-          @media screen and (max-width: $tablet){
-            padding-top:24px;
-            font-size:14px;
+          padding-top: 64px;
+          @media screen and (max-width: $tablet) {
+            padding-top: 24px;
+            font-size: 14px;
           }
         }
       }
     }
   }
 }
-.stories{
+.stories {
   @extend %section__container;
   .title__container {
     @extend %title__container;
-    @media screen and (max-width: $tablet){
+    @media screen and (max-width: $tablet) {
       padding-top: 32px;
       max-width: 992px;
       .title__description {
@@ -1181,21 +1178,21 @@ $white-overlay: linear-gradient(
       }
     }
   }
-  .stories-cards__container{
-    width:1170px;
+  .stories-cards__container {
+    width: 1170px;
     padding-top: 40px;
     padding-bottom: 80px;
     display: flex;
     justify-content: space-between;
-    .story-card{
+    .story-card {
       width: 370px;
-      .story-card__image{
+      .story-card__image {
         position: relative;
         width: 370px;
         height: 253px;
         background: url(../images/stories_images/stories_card-image.png);
       }
-      .story-card__date{
+      .story-card__date {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1205,11 +1202,11 @@ $white-overlay: linear-gradient(
         background: $green-color;
         position: absolute;
         bottom: 24px;
-        left:-16px;
-        .story-card__day{
+        left: -16px;
+        .story-card__day {
           @include font("Raleway", 700, 36px, $primary-color);
         }
-        .story-card__month{
+        .story-card__month {
           @include font("Raleway", 400, 18px, $primary-color);
           text-transform: uppercase;
         }
@@ -1220,23 +1217,23 @@ $white-overlay: linear-gradient(
       }
       .service-card__subtitle {
         @extend %subtitle;
-        text-transform:initial;
+        text-transform: initial;
         line-height: 21px;
         padding-top: 16px;
       }
-      .service-card__social{
-        display:flex;
+      .service-card__social {
+        display: flex;
         padding-top: 24px;
         width: 60%;
         justify-content: space-between;
-        .service-card__social-item{
-          display:flex;
+        .service-card__social-item {
+          display: flex;
           align-items: center;
-          .service-card__icon{
+          .service-card__icon {
             width: 32px;
-            height:32px;
+            height: 32px;
           }
-          .service-card__number{
+          .service-card__number {
             padding-left: 16px;
             @include font("Raleway", 200, 18px, $black-color);
           }
@@ -1244,160 +1241,268 @@ $white-overlay: linear-gradient(
       }
     }
   }
-  .stories__map{
+  .stories__map {
     width: 100%;
-    background: $white-overlay, url(../images/stories_images/stories_background.png);
+    background: $white-overlay,
+      url(../images/stories_images/stories_background.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 40px;
     @extend %title__container;
-    .title__name{
-      color: $orange-color
-    }  
+    @media screen and (max-width: $tablet) {
+      padding-top: 32px;
+      .title__description {
+        font-size: 24px;
+        padding: 16px 0;
+      }
+      .title__name {
+        font-size: 24px;
+        padding: 16px 0;
+      }
+      .title__line {
+        width: 148px;
+        padding-top: 20px;
+      }
+      .title__paragraph {
+        font-size: 14px;
+        padding: 32px 0;
+      }
+    }
+    .title__name {
+      color: $orange-color;
+    }
   }
 }
-.footer{
+.footer {
   width: 100%;
-  background: #F8F8F8;
-  display:flex;
+  background: #f8f8f8;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
-  .footer__container{
-    width:1170px;
-    padding:40px 0;
-    display:flex;
-    justify-content:space-between;
-    .footer__social{
+  justify-content: center;
+  .footer__container {
+    width: 1170px;
+
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $tablet) {
+      width: 992px;
+      padding-bottom: 24px;
+
+    }
+    .footer__social {
       width: 370px;
-      .footer__social-header{
-        display:flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media screen and (max-width: $tablet) {
+        width: 317px;
+        height: 307px;
+      }
+      .footer__social-header {
+        display: flex;
         align-items: center;
         height: 100px;
         @include font("Raleway", 700, 48px, $grey-color);
+        @media screen and (max-width: $tablet) {
+          font-size: 32px;
+          height: 68px;
+        }
       }
-      .footer__social-text{
+      .footer__social-text {
         @include font("Raleway", 400, 18px, $grey-color);
+        @media screen and (max-width: $tablet) {
+          font-size: 14px;
+        }
       }
-      .footer__followers{
-        padding:40px 0;
-        .footer__followers-text{
-          @include font("Raleway", 700, 36px, $black-color); 
+      .footer__followers {
+        padding-bottom: 16px;
+        padding-top: 24px;
+        .footer__followers-text {
+          @include font("Raleway", 700, 36px, $black-color);
+          @media screen and (max-width: $tablet) {
+            font-size: 24px;
+          }
         }
-        .footer__followers-text_sizeXL{
+        .footer__followers-text_sizeXL {
           @include font("Raleway", 700, 48px, $black-color);
+          @media screen and (max-width: $tablet) {
+            font-size: 24px;
+          }
         }
-        .footer__followers-text_sizeS{
+        .footer__followers-text_sizeS {
           @include font("Raleway", 700, 24px, $black-color);
           text-transform: uppercase;
+          @media screen and (max-width: $tablet) {
+            font-size: 16px;
+          }
         }
-        .footer__followers-text_italic{
+        .footer__followers-text_italic {
           @include font("Raleway", 400, 24px, $black-color);
           text-transform: uppercase;
           font-style: italic;
-        }
-      }
-      .footer__socialicons{
-        border-top:solid 1px $grey-color;
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        height:48px;
-        .footer__socialicons-title{
-          @include font("Raleway", 400, 13px, $grey-color);
-        }
-        .footer__socialicons-wrapper{
-          width:280px;
-          display: flex;
-          justify-content: space-between;
-          .footer__socialicon{
-            width: 24px;
+          @media screen and (max-width: $tablet) {
+            font-size: 16px;
           }
         }
       }
-      .footer__social-form{
-        margin-top:48px;
-        display:flex;
-        .social-form__email{
+      .footer__socialicons {
+        border-top: solid 1px $grey-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+        .footer__socialicons-title {
+          @include font("Raleway", 400, 13px, $grey-color);
+        }
+        .footer__socialicons-wrapper {
+          width: 280px;
+          display: flex;
+          justify-content: space-between;
+          @media screen and (max-width: $tablet) {
+            width: 240px;
+          }
+          .footer__socialicon {
+            width: 24px;
+            @media screen and (max-width: $tablet) {
+              width: 16px;
+            }
+          }
+        }
+      }
+      .footer__social-form {
+        margin-top: 48px;
+        display: flex;
+        @media screen and (max-width: $tablet) {
+          margin-top: 24px;
+        }
+        .social-form__email {
           width: 60%;
           text-align: center;
           padding: 16px 0;
-          @include font("Raleway", 400, 18px, $grey-color); 
+          @include font("Raleway", 400, 18px, $grey-color);
           border: 1px solid $grey-color;
-          border-right:none;
+          border-right: none;
+          @media screen and (max-width: $tablet) {
+            padding: 12px 0;
+            font-size: 14px;
+          }
         }
-        .social-form__button{
+        .social-form__button {
           text-align: center;
           padding: 16px 0;
           @include font("Raleway", 700, 18px, $primary-color);
           text-transform: uppercase;
-          background-color: $green-color; 
-          border:none;
+          background-color: $green-color;
+          border: none;
           width: 40%;
+          @media screen and (max-width: $tablet) {
+            padding: 12px 0;
+            font-size: 14px;
+          }
         }
       }
     }
-    .footer__blogs{
+    .footer__blogs {
       width: 468px;
-      display:flex;
+      display: flex;
       flex-direction: column;
       justify-content: space-between;
-      .footer__title{
-        display:flex;
+      @media screen and (max-width: $tablet) {
+        width: 400px;
+        height: 307px;
+      }
+      .footer__title {
+        display: flex;
         align-items: center;
-        padding: 32px 0;
+        height: 100px;
         @include font("Raleway", 700, 24px, $black-color);
         text-transform: uppercase;
+        @media screen and (max-width: $tablet) {
+          height: 68px;
+        }
       }
-      .footer__blogs-container{
+      .footer__blogs-container {
         display: flex;
         justify-content: space-between;
-        .footer__text-wrapper{
+        .footer__article-image{
+          @media screen and (max-width: $tablet) {
+            width: 115px;
+            height: 70px;
+          }
+        }
+        .footer__text-wrapper {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          width:270px;
-          .footer__article-title{
+          width: 270px;
+          @media screen and (max-width: $tablet) {
+            width: 260px;
+          }
+          .footer__article-title {
             @include font("Raleway", 700, 18px, $black-color);
             text-transform: uppercase;
+            @media screen and (max-width: $tablet) {
+              font-size: 14px;
+            }
           }
-          .footer__article-date{
+          .footer__article-date {
             @include font("Raleway", 400, 13px, $black-color);
             height: 24px;
           }
         }
       }
     }
-    .footer__instagram{
+    .footer__instagram {
       width: 270px;
-      display:flex;
+      display: flex;
       flex-direction: column;
       justify-content: space-between;
-      .footer__title{
-        display:flex;
+      @media screen and (max-width: $tablet) {
+        width: 233px;
+        height: 337px;
+      }
+      .footer__title {
+        display: flex;
         align-items: center;
-        padding: 32px 0;
+        height: 100px;
         @include font("Raleway", 700, 24px, $black-color);
         text-transform: uppercase;
+        @media screen and (max-width: $tablet) {
+          height: 68px;
+        }
       }
-      .footer__grid-container{
+      .footer__grid-container {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 33% 33% 33%;
+        @media screen and (max-width: $tablet) {
+          grid-template-columns: 76px 76px 76px;
+          grid-template-rows: 78px 78px 78px;
+          .footer__grid-item{
+            width:78px;
+            height: 76px;
+          }
+        }
       }
-      .footer__photos-link{
+      .footer__photos-link {
         padding-bottom: 50px;
-        padding-top:16px;
+        padding-top: 16px;
         @include font("Raleway", 400, 13px, $grey-color);
         text-transform: uppercase;
         text-decoration: underline;
-
+        @media screen and (max-width: $tablet) {
+          padding-bottom: 0px;
+          padding-top: 16px;
+          font-size: 12px;
+        }
+        
       }
     }
   }
-  .footer__copyright{
-  
-    width:1170px;
+  .footer__copyright {
+    width: 1170px;
     @include font("Raleway", 700, 13px, $black-color);
     padding: 16px 0;
     border-top: solid 1px $grey-color;
